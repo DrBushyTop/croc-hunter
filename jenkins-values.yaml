@@ -5,7 +5,7 @@
 Master:
   ImageTag: "2.74"
   Memory: "512Mi"
-  HostName: jenkins.acs.az.estrado.io
+  HostName: jenkins.parpa.zone
   ServiceType: ClusterIP
   InstallPlugins:
       - kubernetes:0.12
@@ -31,9 +31,9 @@ Master:
       kubernetes.io/tls-acme: "true"
 
     TLS:
-      - secretName: jenkins.acs.az.estrado.io
+      - secretName: jenkins.parpa.zone
         hosts:
-          - jenkins.acs.az.estrado.io
+          - jenkins.parpa.zone
 
 Agent:
   Enabled: false
