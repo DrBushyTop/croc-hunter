@@ -11,12 +11,12 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile="/Dockerfile"
 
-COPY . E:\Pasi\Dropbox\Azure\GitHub\croc-hunter
+COPY . /go/src/github.com/DrBushyTop/croc-hunter
 COPY static/ static/
 
 ENV GIT_SHA $VCS_REF
-ENV GOPATH E:\Pasi\Dropbox\Azure\GitHub\
-RUN cd $GOPATH\croc-hunter && go install -v .
+ENV GOPATH /go
+RUN cd $GOPATH/src/github.com/DrBushyTop/croc-hunter && go install -v .
 
 CMD ["croc-hunter"]
 
