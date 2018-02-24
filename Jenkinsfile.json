@@ -5,7 +5,7 @@
     "cpu": "10m",
     "memory": "128Mi",
     "test": true,
-    "hostname": "croc-hunter.papra.zone"
+    "hostname": "croc-hunter.parpa.zone"
   },
   "container_repo": {
     "host": "phkonttirekisteri.azurecr.io",
